@@ -16,13 +16,26 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
       <a class="logo" href="#top">verdiandesya<span>.</span></a>
       <nav>
         <a href="#work">Work</a><a href="#about">About</a
-        ><a href="#contact">Contact ↗</a>
+        ><a href="#toolkit">Toolkit</a><a href="#contact">Contact ↗</a>
       </nav>
     </header>
 
@@ -32,21 +45,21 @@
           <span class="dot"></span> FRONT-END DEVELOPER · INDONESIA
         </p>
         <h1>
-          Hi, I'm Verdian Desya.<br />I build things for the <em>web</em>
-          <span class="tiny">(mostly).</span>
+          <span class="greeting" id="greeting">Hi</span>, I'm Verdian.<br />
+          I build things for the <em>web.</em>
         </h1>
         <p class="intro">
           Developer with a soft spot for thoughtful design, useful products, and
           little details that make a difference.
         </p>
-        <a class="plain-link" href="#work"
-          >A little look at my work <span>↓</span></a
-        >
+        <a class="plain-link" href="#work">
+          A little look at my work <span class="arrow-down">↓</span>
+        </a>
       </section>
 
       <section class="work" id="work">
         <div class="section-title">
-          <p class="eyebrow">SELECTED PROJECTS</p>
+          <p class="eyebrow">PROJECTS</p>
           <span>2025 — 2026</span>
         </div>
         <a
@@ -136,10 +149,62 @@
             enjoy understanding the problem first, then finding a simple way to
             solve it.
           </p>
-          <p class="skills">
-            JavaScript · React · Next.js · TypeScript · PHP · Laravel · REST API
-            · Figma
-          </p>
+        </div>
+      </section>
+
+      <section class="toolkit py-5" id="toolkit">
+        <p class="eyebrow">MY EVERYDAY TOOLKIT</p>
+        <h2>Tools of the <em>trade.</em></h2>
+        <div class="row row-cols-5 g-3 text-center mt-5">
+          <div class="col">
+            <i class="devicon-javascript-plain fs-1"></i>
+            <p class="mt-3">JavaScript</p>
+          </div>
+
+          <div class="col">
+            <i class="devicon-tailwindcss-original fs-1"></i>
+            <p class="mt-3">Tailwind CSS</p>
+          </div>
+
+          <div class="col">
+            <i class="devicon-bootstrap-plain fs-1"></i>
+            <p class="mt-3">Bootstrap</p>
+          </div>
+
+          <div class="col">
+            <i class="devicon-react-original fs-1"></i>
+            <p class="mt-3">React</p>
+          </div>
+
+          <div class="col">
+            <i class="devicon-nextjs-plain fs-1"></i>
+            <p class="mt-3">Next.js</p>
+          </div>
+
+          <div class="col">
+            <i class="devicon-typescript-plain fs-1"></i>
+            <p class="mt-3">TypeScript</p>
+          </div>
+
+          <div class="col">
+            <i class="devicon-php-plain fs-1"></i>
+            <p class="mt-3">PHP</p>
+          </div>
+
+          <div class="col">
+            <i class="devicon-laravel-original fs-1"></i>
+            <p class="mt-3">Laravel</p>
+          </div>
+
+          <div class="col">
+            <i class="bi bi-braces fs-1"></i>
+            <p class="mt-0">REST API</p>
+          </div>
+
+          <div class="col">
+            <i class="devicon-figma-plain fs-1"></i>
+            <p class="mt-3">Figma</p>
+          </div>
         </div>
       </section>
 
@@ -165,12 +230,31 @@
     </main>
     <footer>
       <span>VERDIAN DESYA</span
-      ><span>MADE WITH <span style="color:#d98d9a;">♥</span> & ☕ · <span id="tahun"></span></span
-      ><a href="#top">BACK TO TOP ↑</a>
+      ><span
+        >DEVELOPED & DESIGN WITH <span style="color: #d98d9a">♥</span> ·
+        <span id="tahun"></span></span
+      ><a href="#top">BACK TO TOP <span class="arrow-up">↑</span></a>
     </footer>
     <script src="script.js"></script>
     <script>
       document.getElementById("tahun").innerText = new Date().getFullYear();
+    </script>
+    <script>
+      const greetings = ["Hi", "Halo", "Hola", "Bonjour", "Ciao", "Olá"];
+
+      const greeting = document.getElementById("greeting");
+      let index = 0;
+
+      setInterval(() => {
+        greeting.classList.add("changing");
+
+        setTimeout(() => {
+          index = (index + 1) % greetings.length;
+          greeting.textContent = greetings[index];
+
+          greeting.classList.remove("changing");
+        }, 300);
+      }, 2000);
     </script>
   </body>
 </html>
