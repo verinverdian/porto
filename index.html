@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Verin Verdian — front-end developer building thoughtful digital experiences."
+    />
+    <title>Verin, Developer & Designer (sometimes)</title>
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="#top">verin<span>.</span></a>
+      <nav>
+        <a href="#work">Work</a><a href="#about">About</a
+        ><a href="#contact">Contact ↗</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <p class="eyebrow">
+          <span class="dot"></span> FRONT-END DEVELOPER · INDONESIA
+        </p>
+        <h1>
+          Hi, I'm Verin.<br />I build things for the <em>web</em>
+          <span class="tiny">(mostly).</span>
+        </h1>
+        <p class="intro">
+          Developer with a soft spot for thoughtful design, useful products, and
+          little details that make a difference.
+        </p>
+        <a class="plain-link" href="#work"
+          >A little look at my work <span>↓</span></a
+        >
+      </section>
+
+      <section class="work" id="work">
+        <div class="section-title">
+          <p class="eyebrow">SELECTED PROJECTS</p>
+          <span>2025 — 2026</span>
+        </div>
+        <a
+          class="project"
+          href="https://github.com/verinverdian/smart-factory"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div class="project-art factory">
+            <div class="mini-window">
+              <div class="mini-top">
+                <i></i><i></i><i></i><span>Smart Factory</span>
+              </div>
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                style="width: 100%; max-width: 400px"
+              >
+                <source src="videos/project01.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+          <div class="project-meta">
+            <div>
+              <h2>Smart Factory <span>↗</span></h2>
+              <p>
+                A simple operations system for managing employees, inventory,
+                and production.
+              </p>
+            </div>
+            <small>Laravel · Bootstrap · PHP · SQLite</small>
+          </div>
+        </a>
+        <a
+          class="project"
+          href="https://github.com/verinverdian/financial-planner"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div class="project-art finance">
+            <div class="mini-window">
+              <div class="mini-top">
+                <i></i><i></i><i></i><span>FinanceTrack</span>
+              </div>
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                style="width: 100%; max-width: 400px"
+              >
+                <source src="videos/project02.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+          <div class="project-meta">
+            <div>
+              <h2>FinanceTrack <span>↗</span></h2>
+              <p>
+                A personal finance dashboard to track income, expenses, and
+                savings goals.
+              </p>
+            </div>
+            <small>Next.js · Supabase · TypeScript · Tailwind CSS</small>
+          </div>
+        </a>
+        <p class="github-note">
+          More bits and experiments on
+          <a
+            href="https://github.com/verinverdian"
+            target="_blank"
+            rel="noreferrer"
+            >GitHub ↗</a
+          >
+        </p>
+      </section>
+
+      <section class="about" id="about">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <div>
+          <h2>Curious by nature.<br /><em>Practical</em> by design.</h2>
+          <p>
+            I've worked on customer-facing websites and internal tools, turning
+            designs into responsive interfaces and connecting them to APIs. I
+            enjoy understanding the problem first, then finding a simple way to
+            solve it.
+          </p>
+          <p class="skills">
+            JavaScript · React · Next.js · TypeScript · PHP · Laravel · REST API
+            · Figma
+          </p>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+        <h2>Let's talk<span>!</span></h2>
+        <p>Open to good people, interesting problems, and new opportunities.</p>
+        <div class="contact-links">
+          <a href="mailto:verdiandesya@gmail.com">Email ↗</a
+          ><a
+            href="https://www.linkedin.com/in/verdiandesya/"
+            target="_blank"
+            rel="noreferrer"
+            >LinkedIn ↗</a
+          ><a
+            href="https://github.com/verinverdian"
+            target="_blank"
+            rel="noreferrer"
+            >GitHub ↗</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span>VERIN VERDIAN</span
+      ><span>MADE WITH <span style="color:#d98d9a;">♥</span> & ☕ · <span id="tahun"></span></span
+      ><a href="#top">BACK TO TOP ↑</a>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+      document.getElementById("tahun").innerText = new Date().getFullYear();
+    </script>
+  </body>
+</html>
