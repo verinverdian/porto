@@ -16,7 +16,7 @@ html {
 }
 body {
   margin: 0;
-  background: var(--paper);
+  background: var(--paper) !important;
   color: var(--ink);
   font-family: var(--sans);
   -webkit-font-smoothing: antialiased;
