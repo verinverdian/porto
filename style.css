@@ -142,11 +142,10 @@ main {
   overflow: hidden;
 }
 .finance {
-  /* background: #f7e9ed; */
   background: #e9eee8;
 }
-.microlearnhub{
-  background: #fff3d5 !important;
+.microlearnhub {
+  background: antiquewhite;
 }
 .mini-window {
   /* width: min(78%, 450px); */
@@ -250,7 +249,6 @@ main {
   height: 100%;
 }
 .factory {
-  /* background: #e9eee8; */
   background: #e8f3ff;
 }
 .factory-card {
