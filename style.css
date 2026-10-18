@@ -146,7 +146,7 @@ main {
   background: #e9eee8;
 }
 .microlearnhub{
-  background: #fff3d5;
+  background: #fff3d5 !important;
 }
 .mini-window {
   /* width: min(78%, 450px); */
