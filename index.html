@@ -33,9 +33,23 @@
   <body>
     <header class="header">
       <a class="logo" href="#top">verdiandesya<span>.</span></a>
-      <nav>
-        <a href="#work">Work</a><a href="#about">About</a
-        ><a href="#toolkit">Toolkit</a><a href="#contact">Contact ↗</a>
+
+      <button
+        class="burger"
+        id="burger"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="nav">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#toolkit">Toolkit</a>
+        <a href="#contact">Contact ↗</a>
       </nav>
     </header>
 
@@ -265,35 +279,10 @@
     <footer>
       <span>VERDIAN DESYA</span
       ><span
-        >DEVELOPED & DESIGN WITH <span style="color: #d98d9a">♥</span> ·
+        >DEVELOPED & DESIGN WITH <span style="color: #d98d9a">♥</span>
         <span id="tahun"></span></span
       ><a href="#top">BACK TO TOP <span class="arrow-up">↑</span></a>
     </footer>
     <script src="script.js"></script>
-    <script>
-      document.getElementById("tahun").innerText = new Date().getFullYear();
-    </script>
-    <script>
-      const greetings = ["Hi", "Halo", "Hola", "Bonjour", "Ciao", "Olá"];
-
-      const greeting = document.getElementById("greeting");
-      let index = 0;
-
-      setInterval(() => {
-        greeting.classList.add("changing");
-
-        setTimeout(() => {
-          index = (index + 1) % greetings.length;
-          greeting.textContent = greetings[index];
-
-          greeting.classList.remove("changing");
-        }, 300);
-      }, 2000);
-    </script>
-    <script>
-      document.addEventListener("contextmenu", function (e) {
-        e.preventDefault();
-      });
-    </script>
   </body>
 </html>
